@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite" parallel="methods" thread-count="2">
+
+ 
+   <listeners>
+  
+  <listener class-name = "utilities.Screenshot"/>
+ 
+  </listeners>
+  
+
+
+  <test name="user test" >
+  
+  <classes>
+  <class name = "com.Goibibo.HomePageTest">
+  
+  
+  </class>
+  
+  </classes>
+  
+  </test>
+</suite>
