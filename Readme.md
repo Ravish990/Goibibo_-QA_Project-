@@ -1,130 +1,64 @@
 # 🧪 Goibibo QA Automation Project
 
-Automated UI testing framework for Goibibo using modern best practices including:
+An automated UI testing framework for Goibibo using modern testing practices.
 
-- **Java + Selenium WebDriver**
-- **TestNG**
-- **Page Object Model (POM)**
-- **Maven**
-- **Data-Driven Testing** (Excel/CSV)
-- **Property-Based Configuration**
-- **Screenshot Capture**
-- **WebDriverManager**
+## ✨ Key Features
 
----
+- **Java + Selenium WebDriver** for browser automation
+- **TestNG** for test execution and reporting
+- **Page Object Model (POM)** for maintainable code
+- **Maven** for dependency management
+- **Data-Driven Testing** with Excel/CSV
+- **Screenshot Capture** for debugging
+- **WebDriverManager** for driver setup
 
 ## 📁 Project Structure
 
 project2/
 ├── pom.xml
-├── screenshots/ # Captured screenshots saved here
-├── test-output/ # TestNG output reports
-│
+├── screenshots/               # Captured screenshots
+├── test-output/              # TestNG reports
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── base/ # Base WebDriver setup (Base.java)
-│ │ │ ├── pages/ # Page classes (e.g., LoginPage.java)
-│ │ │ ├── utilities/ # Utility classes (e.g., ScreenshotUtil.java)
-│ │ └── resources/
-│ │ └── config.properties # Configurable properties (URL, phone, etc.)
-│
-│ ├── test/
-│ │ ├── java/
-│ │ │ └── testng/ # Test classes (LoginTest, DataReader, etc.)
-│ │ └── resources/
-│ │ ├── testData.xlsx # Excel test data
-│ │ └── test.csv # CSV test data
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── base/         # Base WebDriver setup
+│   │   │   ├── pages/        # Page classes
+│   │   │   ├── utilities/    # Utility classes
+│   │   └── resources/
+│   │       └── config.properties
+│   ├── test/
+│   │   ├── java/
+│   │   │   └── testng/       # Test classes
+│   │   └── resources/
+|   |       |---config.properties
+│   │       ├── testData.xlsx # Test data
+│   │       └── test.csv
 
 
+## ⚙️ Prerequisites
 
----
+- Java 8+
+- Maven 3.6+
+- Chrome browser
 
-## ⚙️ Setup Instructions
+## 🚀 Setup Instructions
 
-1. **Clone the project**
-   ```bash
-   git clone <your-repo-url>
-   cd project2
-Install dependencies
+1. Clone the repository:
+   
+   git clone https://github.com/Ravish990/Goibibo_-QA_Project-.git
+   cd goibibo
 
+2. Install dependencies:
 
-mvn clean install
-Requirements
+     mvn clean install
+3.  Run all tests:
 
-Java 8 or above
+     mvn test
+     
+## ✅ Best Practices Implemented
 
-Maven 3.6+
-
-Chrome browser
-
-🧾 config.properties
-Located at: src/main/resources/config.properties
-
-phone=9905534207
-
-You can access these properties using Properties class in Java to keep your sensitive data out of code.
-
-🧪 Running Tests
-Run All Tests
-mvn test
-Run a Specific Test Class
-
-mvn -Dtest=LoginTest test
-📊 Data-Driven Testing
-Data is provided from:
-
-testData.xlsx (Excel)
-
-test.csv (CSV)
-
-Data is read using @DataProvider in DataReader.java. Example:
-
-
-@DataProvider(name = "excelDataProvider")
-public Object[][] excelDataProvider() { ... }
-
-@DataProvider(name = "csvDataProvider")
-public Object[][] csvDataProvider() { ... }
-📸 Screenshots
-Captured using ScreenshotUtil.java located in src/main/java/utilities/
-
-Saved in the /screenshots/ directory.
-
-Usage in any class:
-
-java
-Copy
-Edit
-ScreenshotUtil.takeScreenshot(driver, "screenshotName");
-✅ Best Practices Followed
-Page Object Model (POM) for reusability
-
-Configurable and maintainable code structure
-
-Externalized test data and properties
-
-Organized folder structure using Maven conventions
-
-WebDriver lifecycle managed via Base.java
-
-🚀 Future Improvements
-Add TestNG listeners for auto screenshot on failure
-
-Integration with Allure or Extent Reports
-
-Add cross-browser testing via config
-
-Continuous Integration (CI) with Jenkins or GitHub Actions
-
-Headless browser mode for CI
-
-🧑‍💻 Author
-This project is built as a part of QA automation learning for testing web applications like Goibibo.
-
-Feel free to contribute, fork, or ask for feature enhancements.
-
-
----
-
-Let me know if you want this exported as a downloadable `README.md` file or if you'd like to customize it further.
+Page Object Model for better maintainability
+External configuration for environment flexibility
+Organized Maven project structure
+WebDriver lifecycle management
+Test data externalization
