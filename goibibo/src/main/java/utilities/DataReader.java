@@ -38,7 +38,7 @@ public class DataReader {
 public Object[] [] excelDataProvider() {
 List<Object[]> data = new ArrayList<>();
 try {
-FileInputStream file = new FileInputStream("src/test/resources/testData.xlsx"); 
+FileInputStream file = new FileInputStream("src/main/resources/testData.xlsx"); 
 XSSFWorkbook workbook = new XSSFWorkbook(file); 
 XSSFSheet sheet=workbook.getSheetAt(0);
 for (int i = 0; i <= sheet.getLastRowNum(); i++) { 
@@ -81,9 +81,11 @@ private String getCellValue(Cell cell) {
 
 @DataProvider(name = "csvDataProvider")
 public Object[][] csvDataProvider() {
-	String csvFile = "src/test/resources/test.csv";
+	String csvFile = "src/main/resources/test.csv";
 			List<Object[]> data = new ArrayList<>();
 			String line;
+
+			// read characters(next data)
 			
 	try(BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 		
