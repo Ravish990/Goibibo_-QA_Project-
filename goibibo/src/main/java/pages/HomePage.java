@@ -14,6 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.annotations.BeforeMethod;
 
 import Base.Base;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -27,9 +29,10 @@ public class HomePage extends Base {
 		initialise(); 
         this.driver = super.driver;
         this.wait =  super.wait;
-        PageFactory.initElements(driver, this);
-		
+        PageFactory.initElements(driver, this);	
 	}
+	
+	
 
 	public void testHomePageElements() {
        
@@ -98,11 +101,17 @@ public class HomePage extends Base {
         } catch (Exception e) {
             System.out.println(" Homepage elements test failed due to: " + e.getMessage());
             e.printStackTrace();
-        } finally {
+        } 
+          finally {
             driver.quit();
         }
         
 	}
-        
+	
+//	public void test1() {
+//		Assert.assertEquals(false, true);
+//	}
+	
+
 
 }

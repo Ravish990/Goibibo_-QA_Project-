@@ -5,8 +5,8 @@
     <classes>
       <class name="com.Goibibo.HomePageTest">
         <methods>
-          <include name="test3"/>
-          <include name="test2"/>
+          <include name="test1"/>
+          <include name="setDriverInContext"/>
         </methods>
       </class> <!-- com.Goibibo.HomePageTest -->
     </classes>

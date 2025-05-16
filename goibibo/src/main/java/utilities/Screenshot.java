@@ -61,9 +61,6 @@ public class Screenshot implements ITestListener {
 			FileHandler.copy(screenshot, new File(screenshotName)); 
 		} catch(Exception e) {
 			System.out.println(e.getMessage());
-		}
-		
-		
-		
+		}	
 	}
 }

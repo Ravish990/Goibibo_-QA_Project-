@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
 
     protected static WebDriver driver;
-    protected WebDriverWait wait;
+    protected static WebDriverWait wait;
 
     public void initialise() {
         if (driver == null) {
