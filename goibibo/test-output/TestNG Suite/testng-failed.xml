@@ -3,13 +3,14 @@
 <suite thread-count="2" parallel="methods" name="Failed suite [TestNG Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="utilities.Screenshot"/>
+    <listener class-name="extentReport.ExtentReporter"/>
   </listeners>
   <test thread-count="2" parallel="methods" name="user test(failed)">
     <classes>
       <class name="com.Goibibo.HomePageTest">
         <methods>
-          <include name="test1"/>
           <include name="setDriverInContext"/>
+          <include name="test2"/>
         </methods>
       </class> <!-- com.Goibibo.HomePageTest -->
     </classes>

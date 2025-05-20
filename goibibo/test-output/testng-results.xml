@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-16T15:00:47 IST" name="TestNG Suite" finished-at="2025-05-16T15:01:27 IST" duration-ms="40232">
+  <suite started-at="2025-05-19T14:52:14 IST" name="TestNG Suite" finished-at="2025-05-19T14:52:55 IST" duration-ms="40384">
     <groups>
     </groups>
-    <test started-at="2025-05-16T15:00:47 IST" name="user test" finished-at="2025-05-16T15:01:27 IST" duration-ms="40232">
+    <test started-at="2025-05-19T14:52:14 IST" name="user test" finished-at="2025-05-19T14:52:55 IST" duration-ms="40384">
       <class name="com.Goibibo.HomePageTest">
-        <test-method is-config="true" signature="setDriverInContext(org.testng.ITestContext)[pri:0, instance:com.Goibibo.HomePageTest@229f66ed]" started-at="2025-05-16T15:00:47 IST" name="setDriverInContext" finished-at="2025-05-16T15:00:52 IST" duration-ms="5171" status="PASS">
+        <test-method is-config="true" signature="setDriverInContext(org.testng.ITestContext)[pri:0, instance:com.Goibibo.HomePageTest@662ac478]" started-at="2025-05-19T14:52:14 IST" name="setDriverInContext" finished-at="2025-05-19T14:52:22 IST" duration-ms="8020" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@6731787b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriverInContext -->
-        <test-method signature="test1()[pri:1, instance:com.Goibibo.HomePageTest@229f66ed]" started-at="2025-05-16T15:00:52 IST" name="test1" finished-at="2025-05-16T15:01:26 IST" duration-ms="34484" status="FAIL">
+        <test-method is-config="true" signature="setDriverInContext(org.testng.ITestContext)[pri:0, instance:com.Goibibo.HomePageTest@662ac478]" started-at="2025-05-19T14:52:14 IST" name="setDriverInContext" finished-at="2025-05-19T14:52:22 IST" duration-ms="8020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6731787b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriverInContext -->
+        <test-method signature="test1()[pri:1, instance:com.Goibibo.HomePageTest@662ac478]" started-at="2025-05-19T14:52:22 IST" name="test1" finished-at="2025-05-19T14:52:55 IST" duration-ms="32275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:2, instance:com.Goibibo.HomePageTest@662ac478]" started-at="2025-05-19T14:52:22 IST" name="test2" finished-at="2025-05-19T14:52:22 IST" duration-ms="40" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -33,7 +48,7 @@ at org.testng.Assert.assertEquals(Assert.java:1079)
 at org.testng.Assert.assertEquals(Assert.java:1043)
 at org.testng.Assert.assertEquals(Assert.java:1089)
 at pages.HomePage.test1(HomePage.java:112)
-at com.Goibibo.HomePageTest.test1(HomePageTest.java:22)
+at com.Goibibo.HomePageTest.test2(HomePageTest.java:28)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -55,7 +70,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
+        </test-method> <!-- test2 -->
       </class> <!-- com.Goibibo.HomePageTest -->
     </test> <!-- user test -->
   </suite> <!-- TestNG Suite -->

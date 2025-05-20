@@ -2,6 +2,7 @@ package com.Goibibo;
 
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import Base.Base;
@@ -19,6 +20,11 @@ public class HomePageTest extends Base {
     public void test1() {
         HomePage windows = new HomePage();
         windows.testHomePageElements();
-//        windows.test1();
+       
+    }
+    @Test(priority = 2)
+    public void test2() {
+    	HomePage windows = new HomePage();
+    	 windows.test1();
     }
 }

@@ -4,7 +4,9 @@
  
    <listeners>
   
-  <listener class-name = "utilities.Screenshot"/>
+<listener class-name="utilities.Screenshot"></listener>
+  <listener class-name="extentReport.ExtentReporter"/>
+  
  
   </listeners>
   

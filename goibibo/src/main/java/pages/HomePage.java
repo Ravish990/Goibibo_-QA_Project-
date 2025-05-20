@@ -102,15 +102,15 @@ public class HomePage extends Base {
             System.out.println(" Homepage elements test failed due to: " + e.getMessage());
             e.printStackTrace();
         } 
-          finally {
-            driver.quit();
-        }
+//          finally {
+//            driver.quit();
+//        }
         
 	}
 	
-//	public void test1() {
-//		Assert.assertEquals(false, true);
-//	}
+	public void test1() {
+		Assert.assertEquals(false, true);
+	}
 	
 
 
